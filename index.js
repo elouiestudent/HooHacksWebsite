@@ -105,7 +105,7 @@ console.log("Before get_key_phrases")
 
 //let obj = JSON.parse(text);
 // get_key_phrases (documents);
-app.get('/language.html', function(req, res){
+app.get('/language', function(req, res){
 	// console.log("logging: " + dict)
 	var dictdoc = body_["documents"];
 	var total = "H.J.RES.3 Keywords: ";
