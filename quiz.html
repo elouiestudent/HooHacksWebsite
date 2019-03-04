@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>
-		About Us
+		Quiz
 	</title>
 	<link rel="stylesheet"  href="css/style.css">
 
@@ -47,48 +47,9 @@
 	          Quiz Time!
 	        </h1>
 	        <div class="typeform-widget" data-url="https://elizabethlouie.typeform.com/to/JqUiBZ" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=JqUiBZ&utm_source=typeform.com-13508476-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
-
-            <!-- <div class="question">I like Cake<br>
-				<input class= "choice" id="q1" type="radio" name="q1" value="wrong">Maybe<br>
-				<input class= "choice" id="q1" type="radio" name="q1" value="wrong">No<br>
-				<input class= "choice" id="q1" type="radio" name="q1" value="correct">Yes<hr>
-			</div></li> -->
-<!-- 			<button class = "btn" type="button" value = "submit">Submit</button>
- -->
 	      </div>
 	      
 	    </section>
 	</main>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript">
-	
-	$('.choice').click(function(e) {
-        // var id=$(this).attr('id');
-        var value = e.target.value;
-        var id = e.target.id;
-        console.log("value: " + value);
-        console.log("name: " + id);
-        document.getElementById(id).disabled = true;
-        // $('p').html(id);
-        $.get({
-			url: 'submitquiz',
-			data: {'value': value, 'id': id},
-			success: function(response){
-			    logger("Success")
-			 //   console.log("response:", response);
-			    // $('body').html(response);
-			},
-			error: function(response){
-			}
-		});
-    });
-    
-    function logger(str){
-        var log = true;
-        if(log){
-            console.log(str);
-        }
-    }
-</script>
 </body>
 </html>

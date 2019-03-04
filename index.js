@@ -24,7 +24,7 @@ app.use('/css', express.static(mainpath.join(__dirname, 'css')))
 // These 'getters' are what fetch your pages
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/quiz.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/quiz.html', function(req, res){
@@ -41,18 +41,6 @@ app.get('/machine.html', function(req, res){
 
 app.get('/contacts.html', function(req, res){
     res.sendFile(__dirname + '/contacts.html');
-});
-
-app.get('/submitquiz', function(req, res){
-	var value = req.query.value;
-	var id = req.query.id;
-	if(value == "correct"){
-		console.log("Correct!")
-	}
-	else {
-		console.log("Wrong")
-	}
-    // res.sendFile(__dirname + '/index.html');
 });
 
 // Replace the accessKey string value with your valid access key.
